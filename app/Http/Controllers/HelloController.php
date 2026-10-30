@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Audubon\Entities\HelloWorld;
+use App\src\Entities\HelloWorld;
 use LaravelDoctrine\ORM\Facades\EntityManager;
 
 class HelloController extends Controller

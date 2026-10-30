@@ -1,7 +1,8 @@
 <?php
 
+use App\Http\Controllers\BirdController;
+use Audubon\Entities\Bird;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HelloController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +15,6 @@ use App\Http\Controllers\HelloController;
 |
 */
 
-Route::get('/', [HelloController::class, 'helloWorld']);
+Route::get('/', [BirdController::class, 'index']);
+Route::get('/create-sighting', [BirdController::class, 'create']);
+Route::post('/store-sighting', [BirdController::class, 'store']);
